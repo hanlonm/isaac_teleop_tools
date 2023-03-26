@@ -20,3 +20,33 @@ teleop:
         axis: 7
         target: linear.z
         scale: 1.0
+
+  start_controller:
+    type: service
+    service_name: /start_controller
+    service_request: ""
+    buttons: [7]
+
+  record:
+    type: service
+    service_name: /record
+    service_request: ""
+    buttons: [1]
+
+  play:
+    type: service
+    service_name: /play
+    service_request: ""
+    buttons: [2]
+
+  start_eval:
+    type: service
+    service_name: /start_eval
+    service_request: ""
+    buttons: [0]
+
+  stop_eval:
+    type: service
+    service_name: /stop_eval
+    service_request: ""
+    buttons: [3]
